@@ -1,0 +1,8 @@
+{
+  "name": "meditup",
+  "app_id": "72187808",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
