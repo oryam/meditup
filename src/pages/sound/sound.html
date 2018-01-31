@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Playlist</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>Playlist</h2>
+  <ion-list>
+    <button ion-item *ngFor="let soundtrack of soundtracks | async" (click)="onSelectTrack(soundtrack)">
+      <a [href]="soundtrack.path | serviceUrl">{{ soundtrack.title }}</a>
+    </button>
+  </ion-list>
+</ion-content>

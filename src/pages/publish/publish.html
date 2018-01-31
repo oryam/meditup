@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Publish</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>Publish</h2>
+  <p>Upload a new sound track</p>
+
+  <form [action]="formActionUrl" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" name="submit" value="Upload" />
+  </form>
+</ion-content>
